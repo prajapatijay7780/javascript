@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-vertical</title>
+    <link rel="stylesheet" href="registrationform.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="form-vertical">
+                <div class="card-header">
+                    <h2>Register form</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="txt1">Name</label>
+                        <input type="text" name="txt1" id="txt1" class="form-control" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt2">Email</label>
+                        <input type="email" name="txt2" id="txt2" class="form-control" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt3">City</label>
+                        <select name="txt6" id="txt3" class="form-control">
+                            <option value="Himatnagar">Himatnagar</option>
+                            <option value="Baroda">Baroda</option>
+                            <option value="Surat">Surat</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rdo1">Gender</label>
+                        <div class="rdo-control">
+                            <input type="radio" name="rdoGen" id="rdo1" value="Male">
+                            <label for="rdo1">Male</label>
+                            <input type="radio" name="rdoGen" id="rdo2" value="Female">
+                            <label for="rdo2">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt4">Address</label>
+                        <textarea name="txt7" id="txt4" class="form-control" placeholder="Address"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt5">Date</label>
+                        <input type="text" id="txt5" class="date" placeholder="dd-mm-yyyy">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="btn1" class="btn1" onclick="register()">Register Now</button>
+                <button id="btn2" class="btn2" onclick="update()" style="display:none;">Update</button>
+            </div>
+        </div>
+        <div class="data" id="tabledata">
+            <div class="dataheader">
+                <h2>Data</h2>
+            </div>
+            <table align="center" cellspacing="1" width="940" height="0" border="1">
+                <thead>
+                    <tr align="center" height="40">
+                        <td width="36">No</td>
+                        <td width="113">Name</td>
+                        <td width="113">Email</td>
+                        <td width="113">City</td>
+                        <td width="113">Gender</td>
+                        <td width="113">Address</td>
+                        <td width="113">Date</td>
+                        <td width="113">Edit</td>
+                        <td width="113">Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="box" align="center">
+                
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+   <script src="registrationform.js"></script>
+</body>
+
+</html>

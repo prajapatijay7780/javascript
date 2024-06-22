@@ -1,0 +1,74 @@
+:root{
+    --skyblue-color:rgb(2, 124, 172);
+    --skyblue-light-color:rgb(198, 234, 248);
+    --skyblue-dark-color:rgb(1, 61, 85);
+    --white-color:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.container{
+    margin: auto;
+    margin-top: 10px;
+    width: 940px;
+}
+/* card */
+.card
+{
+    border: 1px solid var(--skyblue-color);
+    
+}
+.card .card-header
+{
+    background-color: var(--skyblue-color);
+    padding: 10px;
+    border-bottom: 2px solid var(--skyblue-dark-color);
+    color: var(--white-color);
+}
+.card .card-body
+{
+    padding: 20px;
+}
+.card .card-footer
+{
+    background-color: var(--skyblue-light-color);
+    border-top: 1px solid var(--skyblue-color);
+    padding: 5px 10px;
+}
+/* form start */
+.form-group {
+       margin-bottom: 20px;
+}
+.form-group>label
+{
+    padding-bottom: 10px;
+    width: 100%;
+    display:block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 5px;
+}
+.form-group .form-control
+{
+    width: 100%;
+    padding: 5px;
+    outline-color: var(--skyblue-color);
+    resize: none;
+    vertical-align: middle;
+}
+.form-group .rdo-control
+{
+    display: inline-block;
+}
+.form-group .date{
+    width: 100%;
+    padding: 5px;
+    outline-color: var(--skyblue-color);
+}
